@@ -1,11 +1,14 @@
 Js Accordion
 ===========
 
-> Creating a responsive accordion content with Vue and jQuery
+> Creating a responsive accordion content with Vue and jQuery.
 
-Read the post [here](https://www.codementor.io/lautiamkok/) about this repository.
+Read the post [here](https://www.codementor.io/lautiamkok/js-tips-creating-a-responsive-accordion-content-with-vue-and-jquery-ct8y41q4m) about this repository.
 
-Hosted at [https://lautiamkok.github.io/](https://lautiamkok.github.io/)
+Hosted at:
+
+* [https://lautiamkok.github.io/js-accordion/food-menu1.html](https://lautiamkok.github.io/js-accordion/food-menu1.html)
+* [https://lautiamkok.github.io/js-accordion/food-menu2.html](https://lautiamkok.github.io/js-accordion/food-menu2.html)
 
 Quick start
 =============
