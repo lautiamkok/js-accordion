@@ -342,9 +342,26 @@ body {
 
 /* Small only */
 @media screen and (max-width: 39.9375em) {
-  .no-padding-for-small-only {
-    padding: 0;
-  }
+    .grid-container.no-padding-for-small-only-for-cards  {
+        padding-right: 10px;  // a temporary hack
+        padding-left: 10px; // a temporary hack
+        max-width: 100%;
+        margin: 0 auto;
+
+        .grid-padding-x {
+            .cell {
+                padding-right: 0;
+                padding-left: 0;
+            }
+        }
+    }
+}
+
+/* Small only */
+@media screen and (max-width: 39.9375em) {
+    .no-padding-for-small-only {
+        padding: 0;
+    }
 }
 
 /**

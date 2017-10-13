@@ -236,6 +236,19 @@ body {
 }
 /* Small only */
 @media screen and (max-width: 39.9375em) {
+  .grid-container.no-padding-for-small-only-for-cards {
+    padding-right: 10px;
+    padding-left: 10px;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  .grid-container.no-padding-for-small-only-for-cards .grid-padding-x .cell {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+/* Small only */
+@media screen and (max-width: 39.9375em) {
   .no-padding-for-small-only {
     padding: 0;
   }
