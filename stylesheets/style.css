@@ -1,0 +1,508 @@
+/**
+ * ===============================================================
+ * Guide.
+ * ===============================================================
+ */
+/**
+ * ===============================================================
+ * Base
+ * ===============================================================
+ */
+/**
+ * Variables.
+ */
+/**
+ * ===============================================================
+ * Base - functions
+ * ===============================================================
+ */
+/**
+ * Add box shadow.
+ * @param  {[type]} @size: 0             [description]
+ * @param  {[type]} @r:0   [description]
+ * @param  {[type]} @g:0   [description]
+ * @param  {[type]} @b:0   [description]
+ * @param  {[type]} @a:1   [description]
+ * @return {[type]}        [description]
+ */
+/**
+ * Adding animation.
+ * @param  {[type]} @speed: 0.25s         [description]
+ * @return {[type]}         [description]
+ */
+/**
+ * Adding fade in out effect on hover, etc.
+ * https://css-tricks.com/almanac/properties/t/transition/
+ * @param  {[type]} $property: all         [description]
+ * @param  {[type]} $time:     1s            [description]
+ * @param  {[type]} $method:   ease-in-out   [description]
+ * @return {[type]}            [description]
+ */
+/**
+ * Center element vertically & horizontally.
+ */
+/**
+ * Left vertical center.
+ * http://zerosixthree.se/vertical-align-anything-with-just-3-lines-of-css/
+ */
+/**
+ * Right vertical center.
+ */
+/**
+ * Big font.
+ */
+/**
+ * ===============================================================
+ * Dependencies
+ * ===============================================================
+ */
+@import '../node_modules/foundation-sites/dist/css/foundation.min.css';
+@import '../node_modules/foundation-icon-fonts/foundation-icons.css';
+@import '../node_modules/aos/dist/aos.css';
+/**
+ * ===============================================================
+ * HTML/ Global
+ * ===============================================================
+ */
+body {
+  color: #4d4d4d;
+  font-family: 'Vollkorn', serif;
+  font-size: 18px;
+  background-color: #eeeeee;
+}
+.text-uppercase {
+  text-transform: uppercase;
+}
+.center-element {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+.vertical-center-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  flex-direction: column;
+  align-items: flex-end;
+  height: 100%;
+  width: 100%;
+}
+.vertical-center-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
+  height: 100%;
+  width: 100%;
+}
+.heading {
+  font-family: 'Vollkorn', serif;
+  font-size: 18px;
+  font-weight: bold;
+}
+.font-big {
+  font-size: 28px;
+  font-style: bold;
+  font-weight: 800;
+  line-height: 41px;
+  padding-bottom: 30px;
+}
+.font-light {
+  color: #9d9d9d;
+}
+.button-arrow,
+.button-plus {
+  background-color: initial;
+  color: black;
+  font-size: 18px;
+  text-decoration: underline;
+  padding-left: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.button-arrow:hover,
+.button-plus:hover,
+.button-arrow:focus,
+.button-plus:focus,
+.button-arrow:active,
+.button-plus:active {
+  background-color: initial;
+  color: #4d4d4d;
+  text-decoration: underline !important;
+}
+.icon {
+  font-style: normal;
+}
+.icon-plus:before {
+  content: "\002B";
+}
+.icon-minus:before {
+  content: "\2212";
+}
+.icon-arrow-down:before {
+  content: "\2193";
+}
+.icon-arrow-up:before {
+  content: "\2191";
+}
+.icon-arrow-right:before {
+  content: "\2192";
+}
+.icon-arrow-left:before {
+  content: "\2190";
+}
+.no-underline {
+  text-decoration: none;
+}
+.card {
+  background-color: initial;
+  border: none;
+}
+.card .button-image {
+  margin-bottom: 20px;
+}
+.card .card-divider {
+  font-size: 16px;
+  background-color: initial;
+  padding-left: 0;
+  padding-right: 0;
+}
+.card .card-section {
+  background-color: initial;
+  color: #9d9d9d;
+  padding-left: 0;
+  padding-right: 0;
+  font-size: 16px;
+}
+.card .button {
+  float: none;
+  display: table;
+  margin: 0;
+  font-size: 16px;
+}
+/* Small only */
+@media screen and (max-width: 39.9375em) {
+  .row.row-cards {
+    background-color: #ffffff;
+  }
+  .row.row-cards .grid-container {
+    padding-right: 10px;
+    padding-left: 10px;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  .row.row-cards .grid-padding-x .cell {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  .card .card-divider,
+  .card .card-section {
+    padding-right: 20px;
+    padding-left: 20px;
+    font-size: 18px;
+  }
+  .card .card-divider .button,
+  .card .card-section .button {
+    font-size: 18px;
+  }
+}
+/* Small only */
+@media screen and (max-width: 39.9375em) {
+  .no-padding-for-small-only {
+    padding: 0;
+  }
+}
+/**
+ * ===============================================================
+ * Food Menu
+ * ===============================================================
+ */
+.row-food.background-white {
+  background-color: #ffffff;
+}
+.heading-food,
+.heading-accordion {
+  font-family: 'Vollkorn', serif;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.food-body,
+.accordion-body {
+  padding: 0;
+}
+.title-food {
+  font-family: 'Vollkorn', serif;
+  font-size: 18px;
+  font-weight: normal;
+}
+.description-food {
+  color: #9d9d9d;
+}
+.description-food span {
+  display: block;
+}
+.fluid-columns {
+  -webkit-column-count: 2;
+  /* Chrome, Safari, Opera */
+  -moz-column-count: 2;
+  /* Firefox */
+  column-count: 2;
+  -webkit-column-gap: 40px;
+  /* Chrome, Safari, Opera */
+  -moz-column-gap: 40px;
+  /* Firefox */
+  column-gap: 40px;
+}
+.fluid-columns.padding-top-60 {
+  padding-top: 60px;
+}
+.fluid-columns.padding-bottom-60 {
+  padding-bottom: 60px;
+}
+.fluid-columns .description-food {
+  font-size: 16px;
+}
+/* Small only */
+@media screen and (max-width: 39.9375em) {
+  .fluid-columns {
+    -webkit-column-count: 1;
+    /* Chrome, Safari, Opera */
+    -moz-column-count: 1;
+    /* Firefox */
+    column-count: 1;
+  }
+  .accordion-items {
+    background-color: #ffffff;
+    /** Overwrite jQuery UI */
+  }
+  .accordion-items .heading-accordion {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: 0;
+    background-color: #f7f7f7;
+    border-top: 1px solid #ebebeb;
+    border-bottom: 1px solid #ebebeb;
+  }
+  .accordion-items .accordion-text {
+    padding: 20px;
+  }
+  .accordion-items .ui-accordion-icons:after {
+    content: " \002B";
+  }
+  .accordion-items .ui-accordion-header-active:after {
+    content: " \2212";
+  }
+}
+/**
+ * ===============================================================
+ * Food Menu: reveal
+ * ===============================================================
+ */
+.container-reveal {
+  margin: 0 auto;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.container-reveal p {
+  color: #9d9d9d;
+  font-size: 16px;
+}
+/* Medium only */
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+  .small.reveal.custom {
+    width: 100%;
+  }
+}
+/* Large only */
+@media screen and (min-width: 64em) and (max-width: 74.9375em) {
+  .small.reveal.custom {
+    width: 100%;
+  }
+}
+/**
+ * Change reveal overlay colour to white.
+ * https://foundation.zurb.com/forum/posts/38179-reveal-modal-background-opacity---foundation-6
+ */
+.reveal-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 999999;
+  background-color: rgba(255, 255, 255, 0.6);
+  overflow-y: scroll;
+}
+/**
+ * Remove border.
+ */
+.reveal {
+  border: none;
+}
+/**
+ * Remove blue backdrop.
+ * https://foundation.zurb.com/forum/posts/25126-remove-blue-drop-down-border-in-chrome
+ * http://outlinenone.com/
+ */
+.reveal {
+  outline: none;
+}
+/**
+ * ===============================================================
+ * Image container
+ * ===============================================================
+ */
+.image-container {
+  position: relative;
+}
+.button-image {
+  display: block;
+  opacity: 0.3;
+  filter: alpha(opacity=30);
+  /* For IE8 and earlier */
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -ms-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+}
+.image-text {
+  position: absolute;
+  z-index: 99;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #000000;
+  font-style: italic;
+  display: block;
+  padding: 10px;
+  -webkit-transition: background-color 1s ease-in-out;
+  -moz-transition: background-color 1s ease-in-out;
+  -ms-transition: background-color 1s ease-in-out;
+  -o-transition: background-color 1s ease-in-out;
+  transition: background-color 1s ease-in-out;
+}
+.image-text.width-80 {
+  width: 80%;
+}
+.image-text p {
+  font-style: normal;
+  font-size: 16px;
+  line-height: 1.5;
+}
+.image-text a {
+  color: #000000;
+  font-style: normal;
+  font-size: 16px;
+}
+.image-container:hover .button-image {
+  opacity: 0.8;
+  filter: alpha(opacity=80);
+}
+.image-container:hover .image-text {
+  background-color: rgba(255, 255, 255, 0.6);
+}
+/**
+ * ===============================================================
+ * Others - Material Icons
+ * ===============================================================
+ */
+.material-icons {
+  padding: 0;
+  margin: 0;
+}
+.material-icons.md-light {
+  color: #ffffff;
+}
+.material-icons.md-dark-background {
+  background-color: #4d4d4d;
+}
+.material-icons.md-60 {
+  font-size: 60px;
+}
+.material-icons.fontsize-16 {
+  font-size: 16px;
+  float: right;
+  margin-top: 1px;
+}
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url('fonts/MaterialIcons-Regular.eot');
+  /* For IE6-8 */
+  src: local('Material Icons'), local('MaterialIcons-Regular'), url('fonts/MaterialIcons-Regular.woff2') format('woff2'), url('fonts/MaterialIcons-Regular.woff') format('woff'), url('fonts/MaterialIcons-Regular.ttf') format('truetype');
+}
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  /* Preferred icon size */
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
+.material-icons.md-80 {
+  font-size: 80px;
+  line-height: 20px;
+}
+/**
+ * ===============================================================
+ * Customise Foundation font path.
+ * ===============================================================
+ */
+@font-face {
+  font-family: "foundation-icons";
+  src: url("fonts/foundation-icons.eot");
+  src: url("fonts/foundation-icons.eot?#iefix") format("embedded-opentype"), url("fonts/foundation-icons.woff") format("woff"), url("fonts/foundation-icons.ttf") format("truetype"), url("fonts/foundation-icons.svg#fontcustom") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*# sourceMappingURL=maps/style.css.map */

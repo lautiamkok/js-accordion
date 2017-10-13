@@ -1,0 +1,135 @@
+{
+  "Main": [
+    {
+      "title": "Duck ravioli",
+      "description": "with honey, soy, ginger and chilli jus with a tatsoi garnish",
+      "additional": ""
+    },
+    {
+      "title": "Grass fed eye fillet steaks",
+      "description": "with parisien butter served with french fries, marsala mushroom sauce and a side salad (g/f)",
+      "additional": ""
+    },
+    {
+      "title": "Prawn linguine",
+      "description": "with cherry tomatoes, olives, parsley, lemon, chilli and toasted breadcrumbs",
+      "additional": ""
+    },
+    {
+      "title": "Beer battered fish",
+      "description": "(ocean caught hake) and handcut chips with a side salad served with tartare sauce",
+      "additional": ""
+    },
+    {
+      "title": "Chickpea, feta and zucchini fritters (V)",
+      "description": "with tomato avocado salsa and minted yoghurt (g/f)",
+      "additional": "+ with optional smoked salmon"
+    },
+    {
+      "title": "Crisp skin barramundi",
+      "description": "with a fennel and potato puree, with sliced beans and cherry tomatoes and a sprinkling of blended roasted spices (g/f)",
+      "additional": ""
+    }
+  ],
+  "Sides": [
+    {
+      "title": "Italian buffalo mozzarella, fresh tomato and basil (V)",
+      "description": "drizzled with extra virgin olive oil and a caramelised balsamic vinegar served with pieces of slightly toasted sourdough bread",
+      "additional": ""
+    },
+    {
+      "title": "Warm turkish bread (V)",
+      "description": "served with dukkah with balsamic and extra virgin olive oil",
+      "additional": ""
+    },
+    {
+      "title": "Potato wedges with sour cream and sweet chilli (V)",
+      "description": "",
+      "additional": ""
+    },
+    {
+      "title": "Crispy chicken wontons",
+      "description": "served with sweet chilli sauce",
+      "additional": ""
+    },
+    {
+      "title": "Shoestring fries",
+      "description": "",
+      "additional": ""
+    },
+    {
+      "title": "Mixed green salad (V)",
+      "description": "",
+      "additional": ""
+    }
+  ],
+  "Asian Fare": [
+    {
+      "title": "Twice cooked chicken dumplings",
+      "description": "shanghainese style (steamed and panfried) served with xo chilli sauce and a vinaigrette dressing",
+      "additional": ""
+    },
+    {
+      "title": "\"Hainan\" rice with poached chicken breast",
+      "description": "served with 3-sauce accompaniment, cucumber and a petite bowl of short soup",
+      "additional": ""
+    },
+    {
+      "title": "Chicken wonton soup",
+      "description": "in a clear soya bean broth with baby spinach",
+      "additional": ""
+    },
+    {
+      "title": "Malaysian (nonya) beef curry ",
+      "description": "with roti chanai (paratha) and rice",
+      "additional": ""
+    },
+    {
+      "title": "Salt and pepper chicken",
+      "description": "with crispy basil and shallots served with rice and side salad",
+      "additional": ""
+    }
+  ],
+  "Sandwiches, Burgers and Wraps": [
+    {
+      "title": "Grilled chicken club burger",
+      "description": "served on a milk bun with bacon, fresh tomato, avocado, tomato relish, mayo served with handcut chips",
+      "additional": ""
+    },
+    {
+      "title": "Toasted italian foccacia with spiced grilled chicken",
+      "description": "zucchini, sundried tomatoes, and pesto",
+      "additional": ""
+    },
+    {
+      "title": "Fried chicken, smashed avocado, bacon, tomato and lemon aioli",
+      "description": "on a slightly chargrilled tortilla with a dollop of our xo chilli sauce",
+      "additional": ""
+    },
+    {
+      "title": "Lemon crumbed chicken tenderloin on fresh wholemeal bread",
+      "description": "avocado, tomato, smoky capsicum relish and lemon aioli",
+      "additional": ""
+    },
+    {
+      "title": "Poached chicken on fresh wholemeal bread",
+      "description": "bacon, avocado and aioli",
+      "additional": ""
+    },
+    {
+      "title": "Tuna sandwich on toasted turkish bread",
+      "description": "with black olives, red onion, parsley with tomato and cucumber",
+      "additional": ""
+    },
+    {
+      "title": "Salad sandwich on country wholemeal bread (V)",
+      "description": "",
+      "additional": ""
+    },
+    {
+      "title": "Grilled steak sourdough sandwich",
+      "description": "with fresh tomato, caramelised onions, cheddar and dijoinnaise mustard on the side",
+      "additional": ""
+    }
+  ]
+}

@@ -1,0 +1,723 @@
+[
+  {
+    "id": "breakfast",
+    "title": "Breakfast & Tea",
+    "description": "Bar Cupola supplies sweet and savoury platters for Breakfasts and Morning Tea Functions.",
+    "image": "images/3a.jpg",
+    "notes": "This menu is a sample only. Minimum order of certain items will apply, so check with us when ordering. For deliveries outside of Angel Place, a separate charge may apply.",
+    "items": {
+      "Savoury Options": [
+        {
+          "title": "Breakfast quiche (large)",
+          "description": "Bacon, tomato and parmesan",
+          "additional": ""
+        },
+        {
+          "title": "Breakfast wrap",
+          "description": "Chorizo sausage and tomato avocado salsa. Cut into halves.",
+          "additional": ""
+        },
+        {
+          "title": "Mini breakfast roll",
+          "description": "Scrambled eggs and bacon (on turkish bread)",
+          "additional": ""
+        },
+        {
+          "title": "Mini savoury muffin",
+          "description": "",
+          "additional": ""
+        },
+        {
+          "title": "Mini quiche",
+          "description": "Ham cheese tomato and shaved almonds \n and/or \n Mushroom cheese and parsley",
+          "additional": ""
+        },
+        {
+          "title": "Mini croissant",
+          "description": "Ham and cheese \n and/or \n Spinach, cheese and mushroom",
+          "additional": ""
+        },
+        {
+          "title": "Mini corn cake",
+          "description": "Served with tomato avocado salsa and minted yoghurt",
+          "additional": ""
+        },
+        {
+          "title": "Quesadilla (toasted tortilla with melted cheese)",
+          "description": "Roast beef \n or \n Vegetarian",
+          "additional": "*Minimum order = 4"
+        }
+      ],
+      "Sweet Options": [
+        {
+          "title": "Mini pastries",
+          "description": "Almond croissant and chocolate croissant",
+          "additional": ""
+        },
+        {
+          "title": "Mini danishes assortment",
+          "description": "",
+          "additional": ""
+        },
+        {
+          "title": "Muffin with seasonal fruits",
+          "description": "",
+          "additional": ""
+        },
+        {
+          "title": "Pikelet with triple berry jam and cream",
+          "description": "",
+          "additional": ""
+        },
+        {
+          "title": "Mini plain bagel",
+          "description": "Served with crème cheese and strawberry jam",
+          "additional": ""
+        },
+        {
+          "title": "Portuguese nata (custard tart) with sprinkle of cinnamon",
+          "description": "",
+          "additional": ""
+        },
+        {
+          "title": "Breakfast trifle",
+          "description": "Served in a glass layered with muesli, yoghurt, honey and raspberry",
+          "additional": ""
+        },
+        {
+          "title": "Individual fruit salad served in a glass",
+          "description": "Fruit platter \n Small, medium or large",
+          "additional": ""
+        }
+      ]
+    }
+  },
+  {
+    "id": "lunch",
+    "title": "Sandwich Lunch",
+    "description": "Includes gourmet sandwiches, cold cuts, lunch meats and fresh salads.",
+    "image": "images/4a.jpg",
+    "notes": "This menu is a sample only. Minimum order of certain items will apply, so check with us when ordering. For deliveries outside of Angel Place, a separate charge may apply.",
+    "items": {
+      "Choice of bread": [
+        {
+          "title": "Regular sandwich bread using wholemeal, white, rye and multigrain breads (cut into quarters)",
+          "description": "",
+          "additional": ""
+        },
+        {
+          "title": "Turkish Bread (cut into quarters)",
+          "description": "",
+          "additional": ""
+        },
+        {
+          "title": "Soft Ciabatta (cut into thirds)",
+          "description": "",
+          "additional": ""
+        },
+        {
+          "title": "Tortilla Wraps (cut into halfs)",
+          "description": "",
+          "additional": ""
+        },
+        {
+          "title": "Mini Individual Soft Bread Rolls",
+          "description": "",
+          "additional": ""
+        },
+        {
+          "title": "Mini Individual Bagel",
+          "description": "",
+          "additional": ""
+        }
+
+      ],
+      "Sample fillings": [
+        {
+          "title": "Crumbed chicken schnitzel, avocado, tomato, romesco salsa and mayo",
+          "description": "",
+          "additional": ""
+        },
+        {
+          "title": "Poached chicken, avocado, bacon and lettuce",
+          "description": "",
+          "additional": ""
+        },
+        {
+          "title": "Crumbed eggplant, zucchini, and crumbled bulgarian fetta with smoky capsicum relish",
+          "description": "",
+          "additional": ""
+        },
+        {
+          "title": "Tandoori chicken fillets, tomato, cucumber, minted yoghurt",
+          "description": "",
+          "additional": ""
+        },
+        {
+          "title": "Tuna, black olives and spanish onion with cucumber and tomato",
+          "description": "",
+          "additional": ""
+        },
+        {
+          "title": "Sauteed mushroom and spinach with provolone",
+          "description": "",
+          "additional": ""
+        },
+        {
+          "title": "Smoked salmon, crème cheese, avocado and rocket",
+          "description": "",
+          "additional": ""
+        },
+        {
+          "title": "Roast beef, caramelised onion, fresh tomato, cheese",
+          "description": "",
+          "additional": ""
+        },
+        {
+          "title": "Turkey, cranberry, tomato, cheese and avocado",
+          "description": "",
+          "additional": ""
+        },
+        {
+          "title": "Prawn, avocado, diced celery and thousand island",
+          "description": "",
+          "additional": ""
+        },
+        {
+          "title": "Ham, fresh tomato, cheese and lemon mayo",
+          "description": "",
+          "additional": ""
+        }
+      ]
+    }
+  },
+  {
+    "id": "buffet",
+    "title": "Buffet & Salad",
+    "description": "Main courses and salads served bistro style.",
+    "image": "images/3a.jpg",
+    "notes": "This menu is a sample only. Minimum order of certain items will apply, so check with us when ordering. For deliveries outside of Angel Place, a separate charge may apply.",
+    "items": {
+      "Salad Menu": [
+        {
+          "title": "House Salad with green beans, tomato, avocado, poached pears and honey walnuts",
+          "description": "",
+          "additional": ""
+        },
+        {
+          "title": "Poached chicken salad",
+          "description": "",
+          "additional": ""
+        },
+        {
+          "title": "Warm salad of haloumi, slow roasted tomatoes, beans and beetroot",
+          "description": "",
+          "additional": ""
+        },
+        {
+          "title": "Nicoise style salad with soft boiled egg, asparagus, avocado, tomatoes, potatoes, olives and crisp bruschetta",
+          "description": "",
+          "additional": ""
+        },
+        {
+          "title": "Caesar salad with poached chicken, bacon and croutons",
+          "description": "",
+          "additional": ""
+        },
+        {
+          "title": "Greek Salad",
+          "description": "",
+          "additional": ""
+        },
+        {
+          "title": "Panzanella (italian salad with crisp italian bread)",
+          "description": "",
+          "additional": ""
+        },
+        {
+          "title": "Roasted tomato and baby bocconcini salad",
+          "description": "",
+          "additional": ""
+        },
+        {
+          "title": "Vietnamese shredded chicken larb salad",
+          "description": "",
+          "additional": ""
+        },
+        {
+          "title": "Rare roast beef thai style salad",
+          "description": "",
+          "additional": ""
+        },
+        {
+          "title": "Brown rice, roast pumpkin, beetroot, pinenuts, baby spinach and fetta",
+          "description": "",
+          "additional": ""
+        },
+        {
+          "title": "Warm chicken and pasta salad",
+          "description": "",
+          "additional": ""
+        },
+        {
+          "title": "Fattousch",
+          "description": "",
+          "additional": ""
+        }
+      ],
+      "Buffet Menu": [
+        {
+          "title": "Caramelised honey and soy chicken fillet",
+          "description": "",
+          "additional": ""
+        },
+        {
+          "title": "Grilled tandoori chicken fillet",
+          "description": "",
+          "additional": ""
+        },
+        {
+          "title": "Veal schnitzel coated with a pramesan, herb and fetta crumb",
+          "description": "",
+          "additional": ""
+        },
+        {
+          "title": "Crumbed veal schnitzel with napolitana sauce with melted mozzarella *",
+          "description": "",
+          "additional": ""
+        },
+        {
+          "title": "Crisp skin barramundi or salmon",
+          "description": "",
+          "additional": ""
+        },
+        {
+          "title": "Whole roast chicken with rosemary, thyme and mixed spices (cut up into 8 pieces)",
+          "description": "",
+          "additional": ""
+        },
+        {
+          "title": "Italian meatballs (4 per serve)",
+          "description": "",
+          "additional": ""
+        },
+        {
+          "title": "Sausage and canneloni hotpot with roasted sweet potatoes",
+          "description": "",
+          "additional": ""
+        },
+        {
+          "title": "Chicken fillet with quinoa salad, almonds and currants",
+          "description": "",
+          "additional": ""
+        },
+        {
+          "title": "Kumera, provolone and nutmeg ravioli with parmesan and crispy sage",
+          "description": "",
+          "additional": ""
+        },
+        {
+          "title": "Lamb ravioli with wilted spinach, roast tomato, olives, basil, pinenuts tossed in pesto",
+          "description": "",
+          "additional": ""
+        },
+        {
+          "title": "Penne with beef bolognese and grated parmesan",
+          "description": "",
+          "additional": ""
+        },
+        {
+          "title": "Fusili with grilled chicken, carrot, zucchini and honey mustard butter",
+          "description": "",
+          "additional": ""
+        },
+        {
+          "title": "Individual savoury quiches",
+          "description": "",
+          "additional": ""
+        },
+        {
+          "title": "Large savoury tarts",
+          "description": "",
+          "additional": ""
+        },
+        {
+          "title": "Individual potted pies",
+          "description": "",
+          "additional": ""
+        },
+        {
+          "title": "Stir-fry hokkien noodles with chicken and prawns with choy sum and shredded omelette",
+          "description": "",
+          "additional": ""
+        },
+        {
+          "title": "Malaysian beef rendang",
+          "description": "",
+          "additional": ""
+        },
+        {
+          "title": "Malaysian chicken and potato curry",
+          "description": "",
+          "additional": ""
+        }
+      ]
+    }
+  },
+  {
+    "id": "formal",
+    "title": "Formal",
+    "description": "Lunch / Dinner, three courses served in an elegant manner.",
+    "image": "images/4a.jpg",
+    "notes": "This menu is a sample only. Minimum order of certain items will apply, so check with us when ordering. For deliveries outside of Angel Place, a separate charge may apply.",
+    "items": {
+      "Entrée": [
+        {
+          "title": "Salt and pepper squid",
+          "description": "with asian herb salad and palm sugar-lime juice dressing",
+          "additional": ""
+        },
+        {
+          "title": "Oysters served three ways",
+          "description": "tempura, natural, with eschallot balsamic dressing",
+          "additional": ""
+        },
+        {
+          "title": "Seared scallops",
+          "description": "served on potato fennel gratin with tomato confit and fennel puree",
+          "additional": ""
+        },
+        {
+          "title": "Smoked trout cakes",
+          "description": "with herbed crème fraiche, chive tomato and preserved lemon salsa",
+          "additional": ""
+        },
+        {
+          "title": "Potato gnocchi",
+          "description": "with gorgonzola sauce, spinach and pinenuts",
+          "additional": ""
+        },
+        {
+          "title": "Zucchini flower fritters",
+          "description": "stuffed with ricotta, pinenuts and lemon with a lime mayonnaise",
+          "additional": ""
+        },
+        {
+          "title": "Roast quail salad",
+          "description": "with, apple, baby beetroot, hazelnuts, cress and citrus dressing",
+          "additional": ""
+        },
+        {
+          "title": "Wonton dumplings",
+          "description": "in a soya bean chicken broth with baby spinach",
+          "additional": ""
+        }
+      ],
+      "Mains": [
+        {
+          "title": "Baked atlantic salmon",
+          "description": "with asparagus, kipflers and salsa verde",
+          "additional": ""
+        },
+        {
+          "title": "Crispy barramundi",
+          "description": "with a red salad of baby beets, grapefruit, radicchio, capers and marinated goat’s fetta and fresh herb dressing",
+          "additional": ""
+        },
+        {
+          "title": "Grilled sword fish",
+          "description": "with a nicoise style salad with a herbed aioli dressing",
+          "additional": ""
+        },
+        {
+          "title": "Risotto",
+          "description": "with prawns, bocconcini, tomato and basil",
+          "additional": ""
+        },
+        {
+          "title": "Chargrilled beef fillet",
+          "description": "with rosti, spinach and bearnaise",
+          "additional": ""
+        },
+        {
+          "title": "Crisp skin chicken kiev",
+          "description": "with crushed chat potatoes with spiced tomato jus",
+          "additional": ""
+        },
+        {
+          "title": "Twice cooked duck",
+          "description": "with sauteed red endives, poached pears and hazelnuts",
+          "additional": ""
+        },
+        {
+          "title": "Osso bucco",
+          "description": "with polenta and gremolata",
+          "additional": ""
+        },
+        {
+          "title": "Roast spatchcock",
+          "description": "with peas, chat potatoes and pan jus",
+          "additional": ""
+        },
+        {
+          "title": "Asian mixed plate with pandan infused jasmine rice",
+          "description": "Beef rendang, tamarind prawns, vegetables, and accompaniments",
+          "additional": ""
+        }
+      ],
+      "Dessert": [
+        {
+          "title": "Tiramisu",
+          "description": "",
+          "additional": ""
+        },
+        {
+          "title": "Chocolate pudding with double cream",
+          "description": "",
+          "additional": ""
+        },
+        {
+          "title": "Lemon curd tartlette with brandy soaked strawberries",
+          "description": "",
+          "additional": ""
+        },
+        {
+          "title": "Buttermilk pannacotta served with seasonal poached fruits",
+          "description": "",
+          "additional": ""
+        },
+        {
+          "title": "Chocolate brulee with almond biscotti",
+          "description": "",
+          "additional": ""
+        },
+        {
+          "title": "Banana pudding, butterscotch sauce and vanilla ice cream",
+          "description": "",
+          "additional": ""
+        },
+        {
+          "title": "Rhubarb and apple crumble with vanilla ice cream",
+          "description": "",
+          "additional": ""
+        }
+      ]
+    }
+
+  },
+  {
+    "id": "canapes",
+    "title": "Canapés",
+    "description": "Platters of finger foods that guests can graze on; ideal for office gatherings. Stylish cocktails and satisfying beverages.",
+    "image": "images/3a.jpg",
+    "notes": "This menu is a sample only. Minimum order of certain items will apply, so check with us when ordering. For deliveries outside of Angel Place, a separate charge may apply.",
+    "items": {
+      "Cold canapes": [
+        {
+          "title": "Cumin crusted lamb fillet encased in a tart shell with smoky capsicum relish",
+          "description": "",
+          "additional": ""
+        },
+        {
+          "title": "Mushroom and bacon on sourdough croute topped with pesto",
+          "description": "",
+          "additional": ""
+        },
+        {
+          "title": "Mini hot dog with chipolata sausages",
+          "description": "",
+          "additional": ""
+        },
+        {
+          "title": "Fresh vietnamese prawn rice paper roll",
+          "description": "",
+          "additional": ""
+        },
+        {
+          "title": "Chicken teriyaki with cucumber and chilli relish on fresh pancake",
+          "description": "",
+          "additional": ""
+        },
+        {
+          "title": "Mini polenta muffin with prawn and dill mayonnaise",
+          "description": "",
+          "additional": ""
+        },
+        {
+          "title": "Roast chicken, seeded mustard and chervil finger sandwiches (3 fingers per sandwich)",
+          "description": "",
+          "additional": ""
+        },
+        {
+          "title": "Poached chicken, celery and walnut finger sandwiches (3 fingers per sandwich)",
+          "description": "",
+          "additional": ""
+        },
+        {
+          "title": "Caremelised onion and goat’s curd tartlette with thyme",
+          "description": "",
+          "additional": ""
+        },
+        {
+          "title": "Saffron poached chicken tartlets with romesco",
+          "description": "",
+          "additional": ""
+        },
+        {
+          "title": "Chicken sang choy bow",
+          "description": "",
+          "additional": ""
+        },
+        {
+          "title": "Vegetarian sang choy bow tartlette (V)",
+          "description": "",
+          "additional": ""
+        },
+        {
+          "title": "Vegetarian rice paper spring roll (V)",
+          "description": "",
+          "additional": ""
+        },
+        {
+          "title": "Vegetarian frittata with pesto (V)",
+          "description": "",
+          "additional": ""
+        },
+        {
+          "title": "Mini corn cake with tomato and avocado salsa and minted yoghurt (V)",
+          "description": "",
+          "additional": ""
+        },
+        {
+          "title": "Mini quiche with roast pumpkin, caramelised onion, pinenuts and fetta (V)",
+          "description": "",
+          "additional": ""
+        },
+        {
+          "title": "Vegetarian tartlette with goats cheese and pesto (V)",
+          "description": "",
+          "additional": ""
+        },
+        {
+          "title": "Falafel with hummus",
+          "description": "",
+          "additional": ""
+        },
+        {
+          "title": "Lemon curd tartlette",
+          "description": "",
+          "additional": ""
+        },
+        {
+          "title": "Raspberry and chocolate almond frangipane tartlette",
+          "description": "",
+          "additional": ""
+        }
+      ],
+      "Hot canapes": [
+        {
+          "title": "Cumin crusted lamb fillet encased in a tart shell with smoky capsicum relish",
+          "description": "",
+          "additional": ""
+        },
+        {
+          "title": "Mushroom and bacon on sourdough croute topped with pesto",
+          "description": "",
+          "additional": ""
+        },
+        {
+          "title": "Mini hot dog with chipolata sausages",
+          "description": "",
+          "additional": ""
+        },
+        {
+          "title": "Fresh vietnamese prawn rice paper roll",
+          "description": "",
+          "additional": ""
+        },
+        {
+          "title": "Chicken teriyaki with cucumber and chilli relish on fresh pancake",
+          "description": "",
+          "additional": ""
+        },
+        {
+          "title": "Mini polenta muffin with prawn and dill mayonnaise",
+          "description": "",
+          "additional": ""
+        },
+        {
+          "title": "Roast chicken, seeded mustard and chervil finger sandwiches (3 fingers per sandwich)",
+          "description": "",
+          "additional": ""
+        },
+        {
+          "title": "Poached chicken, celery and walnut finger sandwiches (3 fingers per sandwich)",
+          "description": "",
+          "additional": ""
+        },
+        {
+          "title": "Caremelised onion and goat’s curd tartlette with thyme",
+          "description": "",
+          "additional": ""
+        },
+        {
+          "title": "Saffron poached chicken tartlets with romesco",
+          "description": "",
+          "additional": ""
+        },
+        {
+          "title": "Chicken sang choy bow",
+          "description": "",
+          "additional": ""
+        },
+        {
+          "title": "Vegetarian sang choy bow tartlette (V)",
+          "description": "",
+          "additional": ""
+        },
+        {
+          "title": "Vegetarian rice paper spring roll (V)",
+          "description": "",
+          "additional": ""
+        },
+        {
+          "title": "Vegetarian frittata with pesto (V)",
+          "description": "",
+          "additional": ""
+        },
+        {
+          "title": "Mini corn cake with tomato and avocado salsa and minted yoghurt (V)",
+          "description": "",
+          "additional": ""
+        },
+        {
+          "title": "Mini quiche with roast pumpkin, caramelised onion, pinenuts and fetta (V)",
+          "description": "",
+          "additional": ""
+        },
+        {
+          "title": "Vegetarian tartlette with goats cheese and pesto (V)",
+          "description": "",
+          "additional": ""
+        },
+        {
+          "title": "Falafel with hummus",
+          "description": "",
+          "additional": ""
+        },
+        {
+          "title": "Lemon curd tartlette",
+          "description": "",
+          "additional": ""
+        },
+        {
+          "title": "Raspberry and chocolate almond frangipane tartlette",
+          "description": "",
+          "additional": ""
+        }
+      ]
+    }
+  }
+]
+
+

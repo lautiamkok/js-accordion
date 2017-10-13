@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=500" />
+    <meta name="author" content="" />
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <title>JS Accordion</title>
+
+    <!-- Google font -->
+    <link href="https://fonts.googleapis.com/css?family=Vollkorn" rel="stylesheet">
+
+    <!-- CSS bundle -->
+    <link href="dist/bundle.min.css" rel="stylesheet">
+
+    <!-- JS bundle -->
+    <script src="dist/bundle.min.js"></script>
+
+    <link href="favicon.ico" rel="shortcut icon" type="image/x-icon">
+</head>
+<body>
+
+<main>
+
+    <!-- row food -->
+    <div class="row row-food">
+
+        <!-- grid container -->
+        <div class="grid-container no-padding-for-small-only" data-aos="fade-up" id="food-catering">
+
+            <!-- grid x - no flex -->
+            <div class="grid-x grid-padding-x show-for-small-only">
+
+                <!-- cell item -->
+                <div class="cell small-12">
+
+                    <!-- accordion -->
+                    <div class="accordion accordion-items">
+
+                        <!-- vue - loop -->
+                        <!-- https://laracasts.com/discuss/channels/vue/use-v-for-without-wrapping-element -->
+                        <template v-for="item in items">
+
+                            <h4 class="heading-accordion">{{ item.title }}</h4>
+                            <div class="accordion-body">
+
+                                <div class="accordion-text">
+                                    <p>{{ item.description }}</p>
+                                    <a class="button button-arrow" :data-toggle="item.id" >View sample menu <i class="icon icon-arrow-right"></i></a>
+                                </div>
+
+                                <div class="accordion-image">
+                                    <img :src="item.image" class="float-center">
+                                </div>
+                            </div>
+
+                        </template>
+                        <!-- vue - loop -->
+
+                    </div>
+                    <!-- accordion -->
+
+
+                </div>
+                <!-- cell item -->
+
+            </div>
+            <!-- grid x -->
+
+            <!-- grid x - with flexbox -->
+            <div class="grid-x grid-padding-x align-center hide-for-small-only ">
+
+                <!-- vue - loop -->
+                <div v-for="item in items" class="cell large-4 medium-6">
+
+                    <!-- card -->
+                    <div class="card grid-item">
+
+                        <div class="image-container">
+                            <a class="button-image" :data-toggle="item.id">
+                                <img :src="item.image" class="float-center">
+                            </a>
+
+                            <div class="text-center image-text width-80">
+                                <h3 class="heading">{{ item.title }}</h3>
+                                <p>{{ item.description }}</p>
+                                <a :data-toggle="item.id">View sample menu <i class="icon icon-arrow-right"></i></a>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- card -->
+
+                </div>
+                <!-- vue - loop -->
+
+            </div>
+            <!-- grid x -->
+
+
+            <!-- reveal -->
+            <!-- vue - loop menus -->
+            <!-- https://laracasts.com/discuss/channels/vue/use-v-for-without-wrapping-element -->
+            <template v-for="item in items">
+
+                <!-- reveal -->
+                <div class="small reveal custom" :id="item.id" data-reveal>
+
+                    <!-- container-reveal -->
+                    <div class="container-reveal">
+
+                        <!-- grid container -->
+                        <div class="grid-container no-padding-for-small-only">
+
+                            <!-- grid x -->
+                            <div class="grid-x grid-padding-x">
+
+                                <!-- cell -->
+                                <div class="cell medium-10 medium-offset-1 text-center">
+                                    <h4 class="heading font-big">{{ item.title }}</h4>
+                                </div>
+                                <!-- cell -->
+
+                                <!-- cell -->
+                                <div class="cell medium-10 medium-offset-1 text-center font-light">
+                                    <p>{{ item.notes }}</p>
+                                    <br/>
+                                </div>
+                                <!-- cell -->
+
+                                <!-- cell -->
+                                <div class="cell small-12">
+
+                                    <!-- fluid-columns -->
+                                    <div class="fluid-columns">
+
+                                        <!-- loop food categories in each menu -->
+                                        <template v-for="(categoryItems, index) in item.items">
+                                            <h4 class="heading-food">{{ index }}</h4>
+                                            <div class="food-body">
+
+                                                <!-- loop food items in each categories -->
+                                                <template v-for="item in categoryItems">
+                                                    <h5 class="title-food">{{ item.title }}</h5>
+                                                    <p class="description-food">{{ item.description }}</p>
+                                                </template>
+
+                                                <br/>
+                                                <br/>
+                                            </div>
+                                        </template>
+
+                                    </div>
+                                    <!-- fluid-columns -->
+
+                                </div>
+                                <!-- cell -->
+
+                            </div>
+                            <!-- grid x -->
+
+                        </div>
+                        <!-- grid container -->
+
+                    </div>
+                    <!-- container-reveal -->
+
+                    <button class="close-button" data-close aria-label="Close reveal" type="button">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+
+                </div>
+                <!-- reveal -->
+
+            </template>
+            <!-- vue - loop -->
+            <!-- reveal -->
+
+        </div>
+        <!-- grid-container -->
+
+    </div>
+    <!-- row food -->
+
+</main>
+
+</body>
+</html>

@@ -1,0 +1,672 @@
+/**
+ * ===============================================================
+ * Guide.
+ * ===============================================================
+ */
+
+// .grid-x {
+//   border:1px solid red;
+// }
+//
+// .cell {
+//   border: 1px solid blue;
+// }
+//
+// .medium-6 {
+//   border: 1px solid green;
+// }
+//
+// .expanded {
+//   border: 1px solid black;
+// }
+
+/**
+ * ===============================================================
+ * Base
+ * ===============================================================
+ */
+
+/**
+ * Variables.
+ */
+@title-font: 'Vollkorn', serif;
+@main-font: 'Vollkorn', serif;
+@sub-font: 'Vollkorn', serif;
+@text-font-size: 18px;
+@text-font-size-medium: 16px;
+@text-color: #000000;
+@path-image: "../image";
+@path-font: "fonts";
+@path-node-modules: "../node_modules";
+@line-grey: #cacaca;
+@grey-medium: #ededed;
+@colour-grey: #eeeeee;
+@colour-light: #9d9d9d;
+@colour-dark: #4d4d4d;
+@colour-medium-dark: #4f4f4f;
+
+/**
+ * ===============================================================
+ * Base - functions
+ * ===============================================================
+ */
+
+/**
+ * Add box shadow.
+ * @param  {[type]} @size: 0             [description]
+ * @param  {[type]} @r:0   [description]
+ * @param  {[type]} @g:0   [description]
+ * @param  {[type]} @b:0   [description]
+ * @param  {[type]} @a:1   [description]
+ * @return {[type]}        [description]
+ */
+// .boxShadow(@h-shadow: 0; @v-shadow: 0; @blur: 0; @spread: 0; @r:0; @g:0; @b:0; @a:1) {
+//     -moz-box-shadow:    @h-shadow @v-shadow @blur @spread rgba(@r, @g, @b, @a);
+//     -webkit-box-shadow: @h-shadow @v-shadow @blur @spread rgba(@r, @g, @b, @a);
+//     box-shadow:         @h-shadow @v-shadow @blur @spread rgba(@r, @g, @b, @a);
+// }
+//
+// Or better:
+// http://stackoverflow.com/questions/40317404/less-potentially-unhandled-rejection-2-no-matching-definition-was-found
+// http://lesscss.org/features/#mixins-parametric-feature-mixins-with-multiple-parameters
+.boxShadow(@h-shadow: 0; @v-shadow: 0; @blur: 0; @spread: 0; @rgba: 0, 0, 0, 1) {
+  @r: extract(@rgba, 1);
+  @g: extract(@rgba, 2);
+  @b: extract(@rgba, 3);
+  @a: extract(@rgba, 4);
+  -moz-box-shadow:    @h-shadow @v-shadow @blur @spread rgba(@r, @g, @b, @a);
+  -webkit-box-shadow: @h-shadow @v-shadow @blur @spread rgba(@r, @g, @b, @a);
+  box-shadow:         @h-shadow @v-shadow @blur @spread rgba(@r, @g, @b, @a);
+}
+
+/**
+ * Adding animation.
+ * @param  {[type]} @speed: 0.25s         [description]
+ * @return {[type]}         [description]
+ */
+.transition(@speed: 0.25s) {
+  /*For Safari 3.1 to 6.0 */
+  -webkit-transition: @speed;
+  transition: @speed;
+}
+
+/**
+ * Adding fade in out effect on hover, etc.
+ * https://css-tricks.com/almanac/properties/t/transition/
+ * @param  {[type]} $property: all         [description]
+ * @param  {[type]} $time:     1s            [description]
+ * @param  {[type]} $method:   ease-in-out   [description]
+ * @return {[type]}            [description]
+ */
+.fadeInOut(@property: all, @time: 1s, @method: ease-in-out) {
+  -webkit-transition: @property @time @method;
+  -moz-transition: @property @time @method;
+  -ms-transition: @property @time @method;
+  -o-transition: @property @time @method;
+  transition: @property @time @method;
+}
+
+/**
+ * Center element vertically & horizontally.
+ */
+.centerElement() {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+/**
+ * Left vertical center.
+ * http://zerosixthree.se/vertical-align-anything-with-just-3-lines-of-css/
+ */
+.verticalCenterLeft() {
+  // position: relative;
+  // top: 50%;
+  // transform: translateY(-50%);
+
+  .centerElement();
+
+  flex-direction: column;
+  align-items: flex-start;
+
+  // Must add width and height for .cell.
+  height: 100%;
+  width: 100%;
+}
+
+/**
+ * Right vertical center.
+ */
+.verticalCenterRight() {
+  .centerElement();
+
+  flex-direction: column;
+  align-items: flex-end;
+
+  // Must add width and height for .cell.
+  height: 100%;
+  width: 100%;
+}
+
+/**
+ * Big font.
+ */
+.fontBig() {
+  font-size: 28px;
+  font-style: bold;
+  font-weight: 800;
+  line-height: 41px;
+  padding-bottom: 30px;
+}
+
+/**
+ * ===============================================================
+ * Dependencies
+ * ===============================================================
+ */
+
+// @import 'social-media.css';
+@import '@{path-node-modules}/foundation-sites/dist/css/foundation.min.css';
+@import '@{path-node-modules}/foundation-icon-fonts/foundation-icons.css';
+@import '@{path-node-modules}/aos/dist/aos.css';
+
+/**
+ * ===============================================================
+ * HTML/ Global
+ * ===============================================================
+ */
+html,
+body {
+    //
+}
+
+body {
+  color: @colour-dark;
+  font-family: @main-font;
+  font-size: @text-font-size;
+  background-color: @colour-grey;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.center-element {
+  .centerElement();
+}
+
+.vertical-center-right {
+  .verticalCenterRight();
+}
+
+.vertical-center-left {
+  .verticalCenterLeft();
+}
+
+.heading {
+  font-family: @title-font;
+  font-size: @text-font-size;
+  font-weight: bold;
+}
+
+.font-big {
+  .fontBig();
+}
+
+.font-light {
+  color: @colour-light;
+}
+
+.button-arrow,
+.button-plus {
+  background-color: initial;
+  color: black;
+  font-size: @text-font-size;
+  text-decoration: underline;
+  padding-left: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: initial;
+    color: @colour-dark;
+    text-decoration: underline !important;
+  }
+}
+
+.icon {
+  font-style: normal;
+}
+
+// http://www.evotech.net/articles/testjsentities.html
+.icon-plus:before {
+  content: "\002B"; // => "&#43;"
+}
+
+.icon-minus:before {
+  content: "\2212"; // => "&#8722;"
+}
+
+.icon-arrow-down:before {
+  content: "\2193"; // => "&darr;"
+}
+
+.icon-arrow-up:before {
+  content: "\2191"; // => "&darr;"
+}
+
+.icon-arrow-right:before {
+  content: "\2192"; // => "&rarr;"
+}
+
+.icon-arrow-left:before {
+  content: "\2190"; // => "&larr;"
+}
+
+.no-underline {
+  text-decoration: none;
+}
+
+.card {
+  // Remove default background colour.
+  background-color: initial;
+
+  // Remove default border.
+  border: none;
+
+  .button-image {
+    margin-bottom: 20px;
+  }
+
+  .card-divider {
+    font-size: @text-font-size-medium;
+    background-color: initial;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .card-section {
+    background-color: initial;
+    color: @colour-light;
+    padding-left: 0;
+    padding-right: 0;
+    font-size: @text-font-size-medium;
+  }
+
+  .button {
+    float: none;
+    display: table;
+    margin: 0;
+    font-size: @text-font-size-medium;
+  }
+}
+
+/* Small only */
+@media screen and (max-width: 39.9375em) {
+  .row.row-cards {
+    background-color: #ffffff;
+
+    .grid-container {
+      padding-right: 10px;  // a temporary hack
+      padding-left: 10px; // a temporary hack
+      max-width: 100%;
+      margin: 0 auto;
+    }
+
+    .grid-padding-x {
+      .cell {
+        padding-right: 0;
+        padding-left: 0;
+      }
+    }
+  }
+  .card {
+    .card-divider,
+    .card-section {
+      padding-right: 20px;
+      padding-left: 20px;
+      font-size: @text-font-size;
+
+      .button {
+          font-size: @text-font-size;
+      }
+    }
+  }
+}
+
+/* Small only */
+@media screen and (max-width: 39.9375em) {
+  .no-padding-for-small-only {
+    padding: 0;
+  }
+}
+
+/**
+ * ===============================================================
+ * Food Menu
+ * ===============================================================
+ */
+
+.row-food {
+  &.background-white {
+    background-color: #ffffff;
+  }
+}
+
+.heading-food,
+.heading-accordion {
+  font-family: @title-font;
+  font-size: @text-font-size;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.food-body,
+.accordion-body {
+  padding: 0;
+}
+
+.title-food {
+  font-family: @title-font;
+  font-size: @text-font-size;
+  font-weight: normal;
+}
+
+.description-food {
+  color: @colour-light;
+
+  span {
+    display: block;
+  }
+}
+
+.fluid-columns {
+  -webkit-column-count: 2; /* Chrome, Safari, Opera */
+  -moz-column-count: 2; /* Firefox */
+  column-count: 2;
+
+  -webkit-column-gap: 40px; /* Chrome, Safari, Opera */
+  -moz-column-gap: 40px; /* Firefox */
+  column-gap: 40px;
+
+  &.padding-top-60 {
+    padding-top: 60px;
+  }
+  &.padding-bottom-60 {
+    padding-bottom: 60px;
+  }
+
+  .description-food  {
+    font-size: @text-font-size-medium;
+  }
+}
+
+/* Small only */
+@media screen and (max-width: 39.9375em) {
+  .fluid-columns {
+    -webkit-column-count: 1; /* Chrome, Safari, Opera */
+    -moz-column-count: 1; /* Firefox */
+    column-count: 1;
+  }
+
+  .accordion-items {
+
+    background-color: #ffffff;
+
+    .heading-accordion {
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      margin: 0;
+      background-color: #f7f7f7;
+      border-top: 1px solid #ebebeb;
+      border-bottom: 1px solid #ebebeb;
+    }
+
+    .accordion-text {
+      padding: 20px;
+    }
+
+    /** Overwrite jQuery UI */
+
+    // Add a plus sign.
+    .ui-accordion-icons:after {
+      content: " \002B"; // => "&#43;"
+    }
+
+    // Add a minus sign.
+    .ui-accordion-header-active:after {
+      content: " \2212"; // => "&#8722;"
+    }
+  }
+}
+
+/**
+ * ===============================================================
+ * Food Menu: reveal
+ * ===============================================================
+ */
+
+.container-reveal {
+  margin: 0 auto;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+
+  p {
+    color: @colour-light;
+    font-size: @text-font-size-medium;
+  }
+}
+
+/* Medium only */
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+  .small.reveal.custom {
+    width: 100%;
+  }
+}
+
+/* Large only */
+@media screen and (min-width: 64em) and (max-width: 74.9375em)  {
+  .small.reveal.custom {
+    width: 100%;
+  }
+}
+
+/**
+ * Change reveal overlay colour to white.
+ * https://foundation.zurb.com/forum/posts/38179-reveal-modal-background-opacity---foundation-6
+ */
+.reveal-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 999999;
+  background-color: rgba(255, 255, 255, 0.6);
+  overflow-y: scroll;
+}
+
+/**
+ * Remove border.
+ */
+.reveal {
+  border: none;
+}
+
+/**
+ * Remove blue backdrop.
+ * https://foundation.zurb.com/forum/posts/25126-remove-blue-drop-down-border-in-chrome
+ * http://outlinenone.com/
+ */
+.reveal {
+  outline: none;
+}
+
+/**
+ * ===============================================================
+ * Image container
+ * ===============================================================
+ */
+
+.image-container {
+  position: relative;
+}
+
+.button-image {
+  display: block;
+  opacity: 0.3;
+  filter: alpha(opacity=30); /* For IE8 and earlier */
+
+  // Fade in and fade out the opacity.
+  // https://css-tricks.com/almanac/properties/t/transition/
+  .fadeInOut(opacity, 1s, ease-in-out);
+}
+
+.image-text {
+  position: absolute;
+  z-index: 99;
+
+  // Vertical and horizontal center (can't use flexbox - does not work on mobile browsers).
+  // https://css-tricks.com/centering-css-complete-guide/
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  color: #000000;
+  font-style: italic;
+  display: block;
+  padding: 10px;
+
+  &.width-80 {
+      width: 80%;
+  }
+
+  // Fade in and fade out the background-color.
+  // https://css-tricks.com/almanac/properties/t/transition/
+  .fadeInOut(background-color, 1s, ease-in-out);
+
+  p {
+    font-style: normal;
+    font-size: @text-font-size-medium;
+    line-height: 1.5;
+  }
+
+  a {
+    color: #000000;
+    font-style: normal;
+    font-size: @text-font-size-medium;
+  }
+}
+
+.image-container:hover {
+  .button-image {
+    opacity: 0.8;
+    filter: alpha(opacity=80); // For IE8 and earlier
+  }
+
+  .image-text {
+    background-color: rgba(255, 255, 255, 0.6);
+  }
+}
+
+/**
+ * ===============================================================
+ * Others - Material Icons
+ * ===============================================================
+ */
+
+.material-icons {
+  padding: 0;
+  margin: 0;
+
+  &.md-light {
+    color: rgba(255, 255, 255, 1);
+  }
+  &.md-dark-background {
+    background-color: @colour-dark
+  }
+  &.md-60 {
+    font-size: 60px;
+  }
+
+  &.fontsize-16 {
+    font-size: 16px;
+    float: right;
+    margin-top: 1px;
+  }
+}
+
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url('@{path-font}/MaterialIcons-Regular.eot'); /* For IE6-8 */
+  src: local('Material Icons'),
+    local('MaterialIcons-Regular'),
+    url('@{path-font}/MaterialIcons-Regular.woff2') format('woff2'),
+    url('@{path-font}/MaterialIcons-Regular.woff') format('woff'),
+    url('@{path-font}/MaterialIcons-Regular.ttf') format('truetype');
+}
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;  /* Preferred icon size */
+  // display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+
+  &.md-80 {
+    font-size:80px;
+    line-height: 20px;
+  }
+}
+
+/**
+ * ===============================================================
+ * Customise Foundation font path.
+ * ===============================================================
+ */
+
+@font-face {
+  font-family: "foundation-icons";
+  src: url("@{path-font}/foundation-icons.eot");
+  src: url("@{path-font}/foundation-icons.eot?#iefix") format("embedded-opentype"),
+       url("@{path-font}/foundation-icons.woff") format("woff"),
+       url("@{path-font}/foundation-icons.ttf") format("truetype"),
+       url("@{path-font}/foundation-icons.svg#fontcustom") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
