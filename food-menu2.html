@@ -1,111 +1,104 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport" content="width=500" />
-    <meta name="author" content="" />
-    <meta name="description" content="">
-    <meta name="keywords" content="">
-    <title>JS Accordion</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=500" />
+  <meta name="author" content="" />
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <title>JS Accordion</title>
 
-    <!-- Google font -->
-    <link href="https://fonts.googleapis.com/css?family=Vollkorn" rel="stylesheet">
+  <!-- Google font -->
+  <link href="https://fonts.googleapis.com/css?family=Vollkorn" rel="stylesheet">
 
-    <!-- CSS bundle -->
-    <link href="dist/bundle.min.css" rel="stylesheet">
+  <!-- CSS bundle -->
+  <link href="dist/bundle.min.css" rel="stylesheet">
 
-    <!-- JS bundle -->
-    <script src="dist/bundle.min.js"></script>
+  <!-- JS bundle -->
+  <script src="dist/bundle.min.js"></script>
 
-    <link href="favicon.ico" rel="shortcut icon" type="image/x-icon">
+  <link href="favicon.ico" rel="shortcut icon" type="image/x-icon">
 </head>
 <body>
 
 <main>
 
-    <!-- row food -->
-    <div class="row row-food background-white" data-aos="fade-up">
+  <!-- row food -->
+  <div class="row row-food background-white" data-aos="fade-up">
 
-        <!-- food container -->
-        <!-- <div class="container-food" data-aos="fade-up"> -->
+    <!-- grid container -->
+    <div class="grid-container no-padding-for-small-only">
 
-            <!-- grid container -->
-            <div class="grid-container no-padding-for-small-only">
+      <!-- grid x -->
+      <div class="grid-x">
 
-                <!-- grid x -->
-                <div class="grid-x">
+        <!-- cell -->
+        <div class="cell medium-12" id="food-lunch">
 
-                    <!-- cell -->
-                    <div class="cell medium-12" id="food-lunch">
+          <!-- fluid-columns -->
+          <div class="fluid-columns padding-top-60 padding-bottom-60 hide-for-small-only">
 
-                        <!-- fluid-columns -->
-                        <div class="fluid-columns padding-top-60 padding-bottom-60 hide-for-small-only">
+            <!-- vue - loop -->
+            <!-- https://laracasts.com/discuss/channels/vue/use-v-for-without-wrapping-element -->
+            <template v-for="(categoryItems, index) in items">
 
-                            <!-- vue - loop -->
-                            <!-- https://laracasts.com/discuss/channels/vue/use-v-for-without-wrapping-element -->
-                            <template v-for="(categoryItems, index) in items">
+              <h4 class="heading-food">{{ index }}</h4>
+              <div class="food-body">
 
-                                <h4 class="heading-food">{{ index }}</h4>
-                                <div class="food-body">
+                <template v-for="item in categoryItems">
+                  <h5 class="title-food">{{ item.title }}</h5>
+                  <p class="description-food">{{ item.description }}</p>
+                </template>
 
-                                    <template v-for="item in categoryItems">
-                                        <h5 class="title-food">{{ item.title }}</h5>
-                                        <p class="description-food">{{ item.description }}</p>
-                                    </template>
+                <br/>
+                <br/>
+              </div>
 
-                                    <br/>
-                                    <br/>
-                                </div>
+            </template>
+            <!-- vue - loop -->
 
-                            </template>
-                            <!-- vue - loop -->
+          </div>
+          <!-- fluid-columns -->
 
-                        </div>
-                        <!-- fluid-columns -->
+          <!-- accordion -->
+          <div class="accordion accordion-items show-for-small-only">
 
+            <!-- vue - loop -->
+            <!-- https://laracasts.com/discuss/channels/vue/use-v-for-without-wrapping-element -->
+            <template v-for="(categoryItems, index) in items">
 
-                        <!-- accordion -->
-                        <div class="accordion accordion-items show-for-small-only">
+              <h4 class="heading-accordion">{{ index }}</h4>
+              <div class="accordion-body">
 
-                            <!-- vue - loop -->
-                            <!-- https://laracasts.com/discuss/channels/vue/use-v-for-without-wrapping-element -->
-                            <template v-for="(categoryItems, index) in items">
-
-                                <h4 class="heading-accordion">{{ index }}</h4>
-                                <div class="accordion-body">
-
-                                    <div class="accordion-text">
-                                        <template v-for="item in categoryItems">
-                                            <h5 class="title-food">{{ item.title }}</h5>
-                                            <p class="description-food">{{ item.description }}</p>
-                                        </template>
-                                    </div>
-
-                                    <br/>
-                                    <br/>
-                                </div>
-
-                            </template>
-                            <!-- vue - loop -->
-
-                        </div>
-                        <!-- accordion -->
-
-                    </div>
-                    <!-- cell -->
-
+                <div class="accordion-text">
+                  <template v-for="item in categoryItems">
+                    <h5 class="title-food">{{ item.title }}</h5>
+                    <p class="description-food">{{ item.description }}</p>
+                  </template>
                 </div>
-                <!-- grid x -->
 
-            </div>
-            <!-- grid-container -->
+                <br/>
+                <br/>
+              </div>
 
-        <!-- </div> -->
-        <!-- menu container -->
+            </template>
+            <!-- vue - loop -->
+
+          </div>
+          <!-- accordion -->
+
+        </div>
+        <!-- cell -->
+
+      </div>
+      <!-- grid x -->
 
     </div>
-    <!-- row food -->
+    <!-- grid-container -->
+
+  </div>
+  <!-- row food -->
 
 </main>
 
