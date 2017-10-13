@@ -29,21 +29,16 @@
 /**
  * Variables.
  */
-@title-font: 'Vollkorn', serif;
-@main-font: 'Vollkorn', serif;
-@sub-font: 'Vollkorn', serif;
-@text-font-size: 18px;
-@text-font-size-medium: 16px;
-@text-color: #000000;
+@font-family-title: 'Vollkorn', serif;
+@font-family-regular: 'Vollkorn', serif;
+@font-size-regular: 18px;
+@font-size-small: 16px;
 @path-image: "../image";
 @path-font: "fonts";
 @path-node-modules: "../node_modules";
-@line-grey: #cacaca;
-@grey-medium: #ededed;
 @colour-grey: #eeeeee;
 @colour-light: #9d9d9d;
 @colour-dark: #4d4d4d;
-@colour-medium-dark: #4f4f4f;
 
 /**
  * ===============================================================
@@ -191,8 +186,8 @@ body {
 
 body {
   color: @colour-dark;
-  font-family: @main-font;
-  font-size: @text-font-size;
+  font-family: @font-family-regular;
+  font-size: @font-size-regular;
   background-color: @colour-grey;
 }
 
@@ -213,8 +208,8 @@ body {
 }
 
 .heading {
-  font-family: @title-font;
-  font-size: @text-font-size;
+  font-family: @font-family-title;
+  font-size: @font-size-regular;
   font-weight: bold;
 }
 
@@ -230,7 +225,7 @@ body {
 .button-plus {
   background-color: initial;
   color: black;
-  font-size: @text-font-size;
+  font-size: @font-size-regular;
   text-decoration: underline;
   padding-left: 0;
   padding-top: 0;
@@ -290,7 +285,7 @@ body {
   }
 
   .card-divider {
-    font-size: @text-font-size-medium;
+    font-size: @font-size-small;
     background-color: initial;
     padding-left: 0;
     padding-right: 0;
@@ -301,14 +296,14 @@ body {
     color: @colour-light;
     padding-left: 0;
     padding-right: 0;
-    font-size: @text-font-size-medium;
+    font-size: @font-size-small;
   }
 
   .button {
     float: none;
     display: table;
     margin: 0;
-    font-size: @text-font-size-medium;
+    font-size: @font-size-small;
   }
 }
 
@@ -336,10 +331,10 @@ body {
     .card-section {
       padding-right: 20px;
       padding-left: 20px;
-      font-size: @text-font-size;
+      font-size: @font-size-regular;
 
       .button {
-          font-size: @text-font-size;
+          font-size: @font-size-regular;
       }
     }
   }
@@ -366,8 +361,8 @@ body {
 
 .heading-food,
 .heading-accordion {
-  font-family: @title-font;
-  font-size: @text-font-size;
+  font-family: @font-family-title;
+  font-size: @font-size-regular;
   font-weight: bold;
   margin-bottom: 20px;
 }
@@ -378,8 +373,8 @@ body {
 }
 
 .title-food {
-  font-family: @title-font;
-  font-size: @text-font-size;
+  font-family: @font-family-title;
+  font-size: @font-size-regular;
   font-weight: normal;
 }
 
@@ -408,7 +403,7 @@ body {
   }
 
   .description-food  {
-    font-size: @text-font-size-medium;
+    font-size: @font-size-small;
   }
 }
 
@@ -468,7 +463,7 @@ body {
 
   p {
     color: @colour-light;
-    font-size: @text-font-size-medium;
+    font-size: @font-size-small;
   }
 }
 
@@ -563,14 +558,14 @@ body {
 
   p {
     font-style: normal;
-    font-size: @text-font-size-medium;
+    font-size: @font-size-small;
     line-height: 1.5;
   }
 
   a {
     color: #000000;
     font-style: normal;
-    font-size: @text-font-size-medium;
+    font-size: @font-size-small;
   }
 }
 
