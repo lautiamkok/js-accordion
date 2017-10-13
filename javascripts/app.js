@@ -45,7 +45,7 @@ DocReady(async () => {
   // Create the accordion menu with jQuery.
   // Make sure to hide it on medium screen and up.
   $('.accordion').accordion({
-    heightStyle: "content",
+    heightStyle: 'content',
     collapsible: true
   })
 
@@ -73,6 +73,6 @@ DocReady(async () => {
   // http://michalsnik.github.io/aos/
   // https://css-tricks.com/aos-css-driven-scroll-animation-library/
   AOS.init({
-      duration: 1200,
+    duration: 1200
   })
 })
