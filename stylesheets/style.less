@@ -169,7 +169,6 @@
  * ===============================================================
  */
 
-// @import 'social-media.css';
 @import '@{path-node-modules}/foundation-sites/dist/css/foundation.min.css';
 @import '@{path-node-modules}/foundation-icon-fonts/foundation-icons.css';
 @import '@{path-node-modules}/aos/dist/aos.css';
@@ -309,23 +308,6 @@ body {
 
 /* Small only */
 @media screen and (max-width: 39.9375em) {
-  .row.row-cards {
-    background-color: #ffffff;
-
-    .grid-container {
-      padding-right: 10px;  // a temporary hack
-      padding-left: 10px; // a temporary hack
-      max-width: 100%;
-      margin: 0 auto;
-    }
-
-    .grid-padding-x {
-      .cell {
-        padding-right: 0;
-        padding-left: 0;
-      }
-    }
-  }
   .card {
     .card-divider,
     .card-section {
@@ -342,26 +324,26 @@ body {
 
 /* Small only */
 @media screen and (max-width: 39.9375em) {
-    .grid-container.no-padding-for-small-only-for-cards  {
-        padding-right: 10px;  // a temporary hack
-        padding-left: 10px; // a temporary hack
-        max-width: 100%;
-        margin: 0 auto;
+  .grid-container.no-padding-for-small-only-for-cards  {
+    padding-right: 10px;  // a temporary hack
+    padding-left: 10px; // a temporary hack
+    max-width: 100%;
+    margin: 0 auto;
 
-        .grid-padding-x {
-            .cell {
-                padding-right: 0;
-                padding-left: 0;
-            }
-        }
+    .grid-padding-x {
+      .cell {
+        padding-right: 0;
+        padding-left: 0;
+      }
     }
+  }
 }
 
 /* Small only */
 @media screen and (max-width: 39.9375em) {
-    .no-padding-for-small-only {
-        padding: 0;
-    }
+  .no-padding-for-small-only {
+    padding: 0;
+  }
 }
 
 /**
@@ -566,7 +548,7 @@ body {
   padding: 10px;
 
   &.width-80 {
-      width: 80%;
+    width: 80%;
   }
 
   // Fade in and fade out the background-color.
